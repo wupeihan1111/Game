@@ -63,7 +63,6 @@ fun Start(m: Modifier, game:Game){
     Image(
         painter = painterResource(id = R.drawable.forest),
         contentDescription = "背景圖",
-
         contentScale = ContentScale.FillBounds,  //縮放符合螢幕寬度
         modifier = Modifier
             .offset { IntOffset(game.background.x1, 0) }
