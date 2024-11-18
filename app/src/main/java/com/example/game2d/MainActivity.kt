@@ -54,15 +54,10 @@ fun Start(m: Modifier, game:Game){
     var x by remember { mutableStateOf(0) }
     var msg by remember { mutableStateOf("遊戲開始") }
 
-
-
-
-
-
-
     Image(
         painter = painterResource(id = R.drawable.forest),
         contentDescription = "背景圖",
+
         contentScale = ContentScale.FillBounds,  //縮放符合螢幕寬度
         modifier = Modifier
             .offset { IntOffset(game.background.x1, 0) }
@@ -71,6 +66,7 @@ fun Start(m: Modifier, game:Game){
     Image(
         painter = painterResource(id = R.drawable.forest),
         contentDescription = "背景圖2",
+
         contentScale = ContentScale.FillBounds,  //縮放符合螢幕寬度
         modifier = Modifier
             .offset {IntOffset(game.background.x2, 0) }
